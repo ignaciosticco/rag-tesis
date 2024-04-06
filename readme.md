@@ -1,0 +1,1 @@
+This repo is about creating a chatbot assistant to answer questions about my phd thesis.

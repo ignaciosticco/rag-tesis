@@ -1,0 +1,23 @@
+UNIVERSIDAD DE BUENOS AIRES
+Facultad de Ciencias Exactas y Naturales
+Departamento de Física
+Modelado y calibración en dinámica peatonal:
+propuestas para mejorar las evacuaciones
+en estado de pánico
+Tesis presentada para optar al título de Doctor de la Universidad de
+Buenos Aires en el área Ciencias Físicas
+Lic. Ignacio Mariano Sticco
+Director de tesis: Dr. Guillermo Alberto Frank
+Consejero de Estudios: Dr. Ariel Chernomoretz
+Lugar de trabajo: Instituto de Física de Buenos Aires (IFIBA)
+Buenos Aires, 2023
+Resumen
+Esta tesis estudia la dinámica de multitudes en estado de pánico. Para describir el comportamiento de dichas multitudes se utiliza el modelo de fuerza social de Helbing. En este modelo los individuos se representan como discos blandos que están sometidos a distintos tipos de fuerzas, y la evolución temporal del sistema queda determinada por las ecuaciones de movimiento de la mecánica clásica. La ventaja de este modelo es que permite estudiar fenómenos macroscópicos de la multitud sin perder detalle del carácter microscópico de los individuos que la componen. 
+
+En primer lugar, se explora el rol de las fuerzas de contacto entre individuos (la fuerza de fricción y la fuerza de repulsión corporal). En particular, se analizan los efectos que produce variar el parámetro de rigidez del cuerpo humano. Se observó que variar dicho parámetro produce efectos muy distintos según el recinto en el cual se encuentre la multitud. En un recinto con puerta angosta (“bottleneck”) el tiempo de evacuación disminuye a medida que la rigidez aumenta. Por otro lado, en un recinto tipo pasillo sucede lo contrario (la velocidad de la multitud disminuye al aumentar la rigidez). Estas diferencias se pueden explicar por el rol que juega la fricción entre individuos, o bien, entre individuos y pared. La primera es decisiva en el caso de “bottlenecks”, mientras que la segunda es más relevante en pasillos. 
+
+Una vez explorados los efectos de las fuerzas de contacto entre individuos, se realizó una calibración de los parámetros usando datos empíricos de la vida real, similares a los esperados para una evacuación de emergencia (video de Black Friday). Se aplicaron métodos de optimización para determinar un conjunto de parámetros en el modelo de fuerza social que sea compatible con los datos empíricos. Los parámetros obtenidos muestran una mejor performance que los parámetros usualmente utilizados en la literatura actual. 
+
+La última etapa de la tesis consistió en explorar mejoras estructurales para las evacuaciones de emergencia (a partir de la re-calibración realizada). El análisis se enfocó en recintos con vestíbulos de diferentes características. El vestíbulo está definido como la sala inmediata a la puerta de salida. Se concluyó que, bajo ciertas condiciones estructurales, los vestíbulos mejoran las evacuaciones de emergencia por dos motivos. Por un lado, incrementan el flujo de evacuación, por otro lado, disminuyen la presión que soportan los individuos. El aumento del flujo se debe al hecho que los vestíbulos son capaces de regular la densidad en la vecindad de la puerta de salida. El flujo se maximiza cuando se obtiene la máxima densidad posible tal que no formen blocking clusters en la puerta de salida. Además, la presión disminuye porque los vestíbulos obligan a la multitud a dispersarse más (eso produce una disminución de la densidad global). 
+
+Los resultados de esta tesis son una contribución a reducir el riesgo de tragedia en estampidas humanas. Esperamos que este trabajo sea una fuente de inspiración para futuras investigaciones y dé origen a soluciones inter-disciplinarias que mejoren las evacuaciones en situaciones de emergencia.

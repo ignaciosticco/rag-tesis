@@ -1,15 +1,21 @@
 To do:
 
-- migrar todo al otro repo
-- Organizar como pasar toda la tesis
-- Explorar https://blog.langchain.dev/semi-structured-multi-modal-rag/
-(para pasarle el pdf con las imagenes directamente)
+Entender bien el codigo que tengo
+pasar de PDF a txt toda la tesis 
+Crear una interfaz desde localhost (usar streamlit: https://www.youtube.com/watch?v=MlK6SIjcjE8&t=975s)
+Pasarle toda la tesis y explorar
+Probar pasarle el pdf asi como viene
+Ver que hacer con las formulas (latex)
+ver que hacer con los graficos (Explorar https://blog.langchain.dev/semi-structured-multi-modal-rag/)
+
+------------------------------
+A futuro:
+Pasarle tambien los papers que cito en mi tesis. 
+Pasarle los papers mios
+Usar Pinecone
 
 
-
-
-
---------------------------------
+=======================================================================
 Observaciones:
 
 1)

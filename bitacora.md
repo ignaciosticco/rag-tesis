@@ -1,22 +1,18 @@
 To do:
 
-Hacer la lista de mejores preguntas
-Registrar preguntas que no contesta
-mejorar acentos
-check preguntas
+1) pushear el codigo!
+2) mejorarlo con chatgpt 
+3) Deployarlo con streamlit
 
-
-Crear una interfaz desde localhost (usar streamlit: https://www.youtube.com/watch?v=MlK6SIjcjE8&t=975s)
-Probar pasarle el pdf asi como viene
-ver que hacer con los graficos (Explorar https://blog.langchain.dev/semi-structured-multi-modal-rag/)
 
 ------------------------------
 A futuro:
 Evaluar al modelo
 Tunear los metaparametros
+ver que hacer con los graficos (Explorar https://blog.langchain.dev/semi-structured-multi-modal-rag/)
 Pasarle tambien los papers que cito en mi tesis. 
 Pasarle los papers mios
-Usar Pinecone
+
 
 
 =======================================================================
@@ -56,3 +52,10 @@ Por algun motivo no eligio la etapa 3 y coincide con mi criterio.
 
 
 4) Interesante: le pase la portada de la tesis, le pregunte cual es el autor y me dijo Ignacio Sticco (a pesar de que en ningun lado dice explicitamente que soy el autor, lo entendio por contexto). 
+
+
+5) Las respuestas no son siempre iguales a pesar de que las preguntas y los parametros queden igual. 
+A veces tengo que ejecutar 2 veces la misma pregunta para que me conteste bien.
+
+6) No estoy 100% seguro, pero me parece que funciona mejor cuando le paso la tesis en txt que en pdf. 
+Hay preguntas que con pdf no me las contesta (me dice que necesita mas info), pero con txt las contesta bien. Hay chances de que sea el factor azaroso que se menciona en el punto de arriba (aunque todo parece indicar que el txt es mejor). 

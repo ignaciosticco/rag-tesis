@@ -1,15 +1,19 @@
 To do:
 
-Entender bien el codigo que tengo
-pasar de PDF a txt toda la tesis 
+Hacer la lista de mejores preguntas
+Registrar preguntas que no contesta
+mejorar acentos
+check preguntas
+
+
 Crear una interfaz desde localhost (usar streamlit: https://www.youtube.com/watch?v=MlK6SIjcjE8&t=975s)
-Pasarle toda la tesis y explorar
 Probar pasarle el pdf asi como viene
-Ver que hacer con las formulas (latex)
 ver que hacer con los graficos (Explorar https://blog.langchain.dev/semi-structured-multi-modal-rag/)
 
 ------------------------------
 A futuro:
+Evaluar al modelo
+Tunear los metaparametros
 Pasarle tambien los papers que cito en mi tesis. 
 Pasarle los papers mios
 Usar Pinecone

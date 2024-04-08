@@ -1,8 +1,19 @@
+Como correr la app:
+
+1) activar el entorno virtual .\.venv\Scripts\Activate
+2) luego correr la app: streamlit run .\test_streamlit.py
+
+Para correr un .py o .ipynb hacerlo con el venv activado. 
+
+
+---------------------------
 To do:
 
-1) pushear el codigo!
-2) mejorarlo con chatgpt 
-3) Deployarlo con streamlit
+1) Investigar como deployar el codigo con streamlit (python version, venv, docker, etc)
+2) Investigar como subir las credenciales de forma oculta (https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app)
+1) Deployar la app con streamlit
+
+
 
 
 ------------------------------

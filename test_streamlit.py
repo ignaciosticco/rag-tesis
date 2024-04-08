@@ -4,7 +4,6 @@
 import streamlit as st
 import os
 from dotenv import load_dotenv
-from langchain.llms import OpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain_openai.chat_models import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
@@ -17,7 +16,7 @@ from langchain_core.runnables import RunnableParallel, RunnablePassthrough
 #### Configuracion de la pagina web ####
 
 st.title("ChatBOT de la Tesis Doctoral de Ignacio Sticco")
-pregunta = st.text_input("Hacé tu pregunta")
+pregunta = st.text_input("Hacé tu pregunta", 'De que trata la tesis?')
 
 #### Importacion y chunkeo de la base de datos ####
 
@@ -58,3 +57,5 @@ chain = (
 if pregunta:
     response = chain.invoke(pregunta)
     st.write(response)
+
+

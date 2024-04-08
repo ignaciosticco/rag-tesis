@@ -13,4 +13,4 @@ from langchain_core.runnables import RunnableParallel, RunnablePassthrough
 st.write('Hello world!')
 st.write('Hello world! 2')
 
-st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
+st.write(st.secrets["things_i_like"])

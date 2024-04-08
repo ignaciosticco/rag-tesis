@@ -9,10 +9,10 @@ Para correr un .py o .ipynb hacerlo con el venv activado.
 ---------------------------
 To do:
 
-1) Investigar como deployar el codigo con streamlit (python version, venv, docker, etc)
-2) Investigar como subir las credenciales de forma oculta (https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app)
-1) Deployar la app con streamlit
+1) Terminar de deployar todo (copiar todo el contenido de test_streamlit.py a
+streamlit_app)
 
+2) Crear un testing set y tunear los hiperparametros para mejorar la performance. 
 
 
 
@@ -70,3 +70,21 @@ A veces tengo que ejecutar 2 veces la misma pregunta para que me conteste bien.
 
 6) No estoy 100% seguro, pero me parece que funciona mejor cuando le paso la tesis en txt que en pdf. 
 Hay preguntas que con pdf no me las contesta (me dice que necesita mas info), pero con txt las contesta bien. Hay chances de que sea el factor azaroso que se menciona en el punto de arriba (aunque todo parece indicar que el txt es mejor). 
+
+
+=================================
+
+Deployment:
+
+1) Al requirements.txt le tuve que sacar la siguiente libreria porque me tiraba error:
+pywin32==306
+
+2) La app de prueba corrio bien. El script se llama: streamlit_app.py :)
+
+3) Pude pasarle bien la "api key" (usando la parte de secrets).
+Ver esto: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management
+
+4) Dejo de andar porque se cayo el server :(
+
+5) siguientes pasos a dar: copiar todo el contenido de test_streamlit.py a
+streamlit_app

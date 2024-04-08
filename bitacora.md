@@ -10,7 +10,10 @@ Para correr un .py o .ipynb hacerlo con el venv activado.
 To do:
 
 1) Terminar de deployar todo (copiar todo el contenido de test_streamlit.py a
-streamlit_app)
+streamlit_app):
+
+https://share.streamlit.io/
+https://tesis-rag.streamlit.app/
 
 2) Crear un testing set y tunear los hiperparametros para mejorar la performance. 
 
@@ -88,3 +91,13 @@ Ver esto: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your
 
 5) siguientes pasos a dar: copiar todo el contenido de test_streamlit.py a
 streamlit_app
+
+
+================================
+
+Evaluation
+
+La mejor forma es hacer un set de preguntas y respuestas y usar chatgpt 4 para verificar el grado de plausibildiad entre la respuesta que genera y la respuesta ground truth (que yo escribo).
+
+Ver este video:
+https://www.youtube.com/watch?v=ZPX3W77h_1E&t=1242s

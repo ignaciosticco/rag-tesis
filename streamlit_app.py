@@ -10,7 +10,18 @@ from langchain_openai.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import DocArrayInMemorySearch
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
-st.write('Hello world!')
-st.write('Hello world! 2')
+#### Configuracion de la pagina web ####
 
-st.write(st.secrets["things_i_like"])
+st.title("ChatBOT de la Tesis Doctoral de Ignacio Sticco")
+pregunta = st.text_input("Hacé tu pregunta", 'De que trata la tesis?')
+
+#### Importacion y chunkeo de la base de datos ####
+
+loader = TextLoader("tesis_doctoral.txt", encoding='utf-8')
+text_documents = loader.load()
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+documents = text_splitter.split_documents(text_documents)
+embeddings = OpenAIEmbeddings()
+vectorstore = DocArrayInMemorySearch.from_documents(documents, embeddings) # Embed the chunked documents
+
+#st.write(st.secrets["things_i_like"])

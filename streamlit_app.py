@@ -12,3 +12,5 @@ from langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
 st.write('Hello world!')
 st.write('Hello world! 2')
+
+st.write("DB token:", st.secrets["db_token"])

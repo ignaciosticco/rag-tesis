@@ -19,9 +19,9 @@ st.write('Hola2')
 
 #### Importacion y chunkeo de la base de datos ####
 
-loader = TextLoader("tesis_doctoral.txt", encoding='utf-8')
-text_documents = loader.load()
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+#loader = TextLoader("tesis_doctoral.txt", encoding='utf-8')
+#text_documents = loader.load()
+#text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 #documents = text_splitter.split_documents(text_documents)
 #embeddings = OpenAIEmbeddings()
 #vectorstore = DocArrayInMemorySearch.from_documents(documents, embeddings) # Embed the chunked documents

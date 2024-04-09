@@ -12,10 +12,12 @@ from langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
 #### Configuracion de la pagina web ####
 
-st.title("ChatBOT de la Tesis Doctoral de Ignacio Sticco")
-pregunta = st.text_input("Hacé tu pregunta", 'De que trata la tesis?')
+st.title("🚀 ChatBOT de la Tesis Doctoral de Ignacio Sticco 🚀")
+pregunta = st.text_input("Hacé tu pregunta")
 
-st.write('Hola13')
+st.write("Preguntas de ejemplo:")
+st.write("De qué trata la tesis?")
+st.write("Qué es la dinámica peatonal?")
 
 #### Importacion y chunkeo de la base de datos ####
 

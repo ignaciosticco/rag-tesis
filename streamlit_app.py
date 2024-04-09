@@ -65,3 +65,6 @@ st.write("- ¿Qué parámetros se ajustaron y cuáles son los valores óptimos?"
 st.write("- ¿Cuál es la fórmula matematica de los blocking clusters?")
 st.write("- ¿Cómo se pueden mejorar las evacuaciones de emergencia?")
 
+st.markdown("""---""")
+st.write("Enlace a la tesis: https://bibliotecadigital.exactas.uba.ar/download/tesis/tesis_n7313_Sticco.pdf")
+

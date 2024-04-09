@@ -15,7 +15,7 @@ from langchain_core.runnables import RunnableParallel, RunnablePassthrough
 st.title("ChatBOT de la Tesis Doctoral de Ignacio Sticco")
 pregunta = st.text_input("Hacé tu pregunta", 'De que trata la tesis?')
 
-st.write('Hola12')
+st.write('Hola13')
 
 #### Importacion y chunkeo de la base de datos ####
 
@@ -48,3 +48,10 @@ chain = (
     | model
     | parser
 )
+
+
+#### Correr el programa en el front ####
+
+if pregunta:
+    response = chain.invoke(pregunta)
+    st.write(response)

@@ -15,7 +15,7 @@ from langchain_core.runnables import RunnableParallel, RunnablePassthrough
 st.title("ChatBOT de la Tesis Doctoral de Ignacio Sticco")
 pregunta = st.text_input("Hacé tu pregunta", 'De que trata la tesis?')
 
-st.write('Hola9')
+st.write('Hola10')
 
 #### Importacion y chunkeo de la base de datos ####
 
@@ -26,4 +26,6 @@ documents = text_splitter.split_documents(text_documents)
 embeddings = OpenAIEmbeddings()
 vectorstore = DocArrayInMemorySearch.from_documents(documents, embeddings) # Embed the chunked documents
 
-st.write(documents[0])
+
+#### Configuracion de la cadena ####
+model = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model="gpt-3.5-turbo")

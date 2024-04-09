@@ -34,7 +34,7 @@ parser = StrOutputParser()
 
 template = """
 Respondé las preguntas basandote en el siguiente contexto. Si no podes responder una pregunta. 
-Responde: "Necesito más información para responder esta pregunta."
+Responde: "Necesito más información para responder esta pregunta.". Si te preguntan quienes son los directores respondé: Claudio Dorso y Guillermo Frank.
 
 Contexto: {context}
 
@@ -59,5 +59,7 @@ if pregunta:
 
 st.markdown("""---""")
 st.write("#### Preguntas de ejemplo:")
-st.write("- De qué trata la tesis?")
-st.write("- Qué es la dinámica peatonal?")
+st.write("- ¿De qué trata la tesis?")
+st.write("- ¿Qué es la dinámica peatonal?")
+st.write("- ¿Qué parámetros se ajustaron y cuáles son los valores óptimos?")
+st.write("- ¿Cómo se pueden mejorar las evacuaciones de emergencia??")

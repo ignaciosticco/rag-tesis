@@ -30,3 +30,21 @@ vectorstore = DocArrayInMemorySearch.from_documents(documents, embeddings) # Emb
 #### Configuracion de la cadena ####
 model = ChatOpenAI(openai_api_key=st.secrets["OPENAI_API_KEY"], model="gpt-3.5-turbo")
 parser = StrOutputParser()
+
+template = """
+Respondé las preguntas basandote en el siguiente contexto. Si no podes responder una pregunta. 
+Responde: "Necesito más información para responder esta pregunta."
+
+Contexto: {context}
+
+Pregunta: {question}
+"""
+
+prompt = ChatPromptTemplate.from_template(template)
+setup = RunnableParallel(context=vectorstore.as_retriever(), question=RunnablePassthrough())
+chain = (
+    setup   
+    | prompt
+    | model
+    | parser
+)

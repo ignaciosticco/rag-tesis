@@ -25,3 +25,5 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=10
 documents = text_splitter.split_documents(text_documents)
 embeddings = OpenAIEmbeddings()
 vectorstore = DocArrayInMemorySearch.from_documents(documents, embeddings) # Embed the chunked documents
+
+st.write(documents[0])

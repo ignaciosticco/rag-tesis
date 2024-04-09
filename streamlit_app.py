@@ -28,4 +28,4 @@ vectorstore = DocArrayInMemorySearch.from_documents(documents, embeddings) # Emb
 
 
 #### Configuracion de la cadena ####
-model = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model="gpt-3.5-turbo")
+model = ChatOpenAI(openai_api_key=st.secrets["OPENAI_API_KEY"], model="gpt-3.5-turbo")

@@ -57,7 +57,7 @@ if pregunta:
     response = chain.invoke(pregunta)
     st.write(response)
 
-
-st.write("Preguntas de ejemplo:")
+st.markdown("""---""")
+st.write("#### Preguntas de ejemplo:")
 st.write("- De qué trata la tesis?")
 st.write("- Qué es la dinámica peatonal?")

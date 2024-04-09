@@ -1,31 +1,36 @@
-Como correr la app:
+Como correr la app localmente:
 
 1) activar el entorno virtual .\.venv\Scripts\Activate
 2) luego correr la app: streamlit run .\test_streamlit.py
 
 Para correr un .py o .ipynb hacerlo con el venv activado. 
 
+------------------------------------------------------------------------------------------------------
 
----------------------------
-To do:
+Como deployar un cambio:
 
-1) Terminar de deployar todo (copiar todo el contenido de test_streamlit.py a
-streamlit_app):
-
-https://share.streamlit.io/
+hacer git add, commit y push del script de python que es la app.
+Los cambios impactan aca:
 https://tesis-rag.streamlit.app/
 
-2) Crear un testing set y tunear los hiperparametros para mejorar la performance. 
+
+Nota: para algunas configuraciones (como las api keys) es necesario entrar a mi cuenta de stramlit:
+https://share.streamlit.io/
+
+------------------------------------------------------------------------------------------------------
+To do:
+
+1) Crear un testing set y tunear los hiperparametros para mejorar la performance. 
+
+2) Poner una forma de traducir la pagina al ingles
 
 
-
-------------------------------
+------------------------------------------------------------------------------------------------------
 A futuro:
-Evaluar al modelo
-Tunear los metaparametros
-ver que hacer con los graficos (Explorar https://blog.langchain.dev/semi-structured-multi-modal-rag/)
-Pasarle tambien los papers que cito en mi tesis. 
-Pasarle los papers mios
+
+- Hacer que interprete los graficos (Explorar https://blog.langchain.dev/semi-structured-multi-modal-rag/)
+- Pasarle tambien los papers que cito en mi tesis. 
+- Pasarle los papers mios
 
 
 
@@ -74,23 +79,6 @@ A veces tengo que ejecutar 2 veces la misma pregunta para que me conteste bien.
 6) No estoy 100% seguro, pero me parece que funciona mejor cuando le paso la tesis en txt que en pdf. 
 Hay preguntas que con pdf no me las contesta (me dice que necesita mas info), pero con txt las contesta bien. Hay chances de que sea el factor azaroso que se menciona en el punto de arriba (aunque todo parece indicar que el txt es mejor). 
 
-
-=================================
-
-Deployment:
-
-1) Al requirements.txt le tuve que sacar la siguiente libreria porque me tiraba error:
-pywin32==306
-
-2) La app de prueba corrio bien. El script se llama: streamlit_app.py :)
-
-3) Pude pasarle bien la "api key" (usando la parte de secrets).
-Ver esto: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management
-
-4) Dejo de andar porque se cayo el server :(
-
-5) siguientes pasos a dar: copiar todo el contenido de test_streamlit.py a
-streamlit_app
 
 
 ================================

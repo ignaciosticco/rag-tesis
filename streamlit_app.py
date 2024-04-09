@@ -62,4 +62,6 @@ st.write("#### Preguntas de ejemplo:")
 st.write("- ¿De qué trata la tesis?")
 st.write("- ¿Qué es la dinámica peatonal?")
 st.write("- ¿Qué parámetros se ajustaron y cuáles son los valores óptimos?")
-st.write("- ¿Cómo se pueden mejorar las evacuaciones de emergencia??")
+st.write("- ¿Cuál es la fórmula matematica de los blocking clusters?")
+st.write("- ¿Cómo se pueden mejorar las evacuaciones de emergencia?")
+

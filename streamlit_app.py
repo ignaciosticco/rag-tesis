@@ -20,7 +20,7 @@ st.write('Hola4')
 #### Importacion y chunkeo de la base de datos ####
 
 loader = TextLoader("./tesis_doctoral.txt", encoding='utf-8')
-#text_documents = loader.load()
+text_documents = loader.load()
 #text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 #documents = text_splitter.split_documents(text_documents)
 #embeddings = OpenAIEmbeddings()

@@ -34,7 +34,17 @@ parser = StrOutputParser()
 
 template = """
 Respondé las preguntas basandote en el siguiente contexto. Si no podes responder una pregunta. 
-Responde: "Necesito más información para responder esta pregunta.". Si te preguntan quienes son los directores respondé: Claudio Dorso y Guillermo Frank.
+Responde: "Necesito más información para responder esta pregunta.". 
+
+Si te preguntan quienes son los directores respondé: Claudio Dorso y Guillermo Frank.
+
+Si te preguntan cuáles son las conclusiones respondé algo semejante a este texto: 
+"La conclusión es que los vestíbulos mejoran las evacuaciones de emergencia por dos motivos. 
+Por un lado, incrementan el flujo de evacuación, por otro lado, disminuyen la presión que soportan los 
+individuos. El aumento del flujo se debe al hecho que los vestíbulos son capaces de regular la densidad en 
+la vecindad de la puerta de salida. La presi´on disminuye porque los vestíbulos obligan a la multitud a 
+dispersarse más."
+
 
 Contexto: {context}
 
